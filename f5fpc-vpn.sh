@@ -6,12 +6,12 @@ VPNHOST=""
 USERNAME=""
 keep_running=1
 
-for cmd in docker ip; do
-  if ! command -v "$cmd" >/dev/null 2>&1; then
-    echo "Unsatisfied dependencies: $cmd command not found!"
-    exit 1
-  fi
-done
+#for cmd in docker ip; do
+#  if ! command -v "$cmd" >/dev/null 2>&1; then
+#    echo "Unsatisfied dependencies: $cmd command not found!"
+#    exit 1
+#  fi
+#done
 
 show_help() {
   cat << EOF
