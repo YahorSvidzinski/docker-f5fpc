@@ -16,6 +16,6 @@ RUN mkdir -p /tmp/f5fpc && \
     yes "yes" | ./Install.sh && \
     rm -rf /tmp/f5fpc
 
-ADD ./files/opt/* /opt/
+ADD opt/* /opt/
 
 CMD ["/opt/idle.sh"]
