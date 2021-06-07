@@ -98,8 +98,7 @@ start_client() {
     --net host \
     -e VPNHOST="$VPNHOST" \
     -e USERNAME="$USERNAME" \
-    "${DOCKER_IMAGE}" \
-    /opt/idle.sh > /dev/null; then
+    "${DOCKER_IMAGE}"; then
       echo "Error starting docker container."
       exit 1
   fi
