@@ -63,5 +63,5 @@ fi
 
 nohup $command > /dev/null
 
-#iptables -t nat -A POSTROUTING -o tun0 -j MASQUERADE
+iptables -t nat -A POSTROUTING -o tun0 -j MASQUERADE
 
